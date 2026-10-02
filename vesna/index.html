@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ヴェスナガチャはいくら？天井まで何連・必要な原石を計算【原神Ver.7.1】</title>
+<meta name="description" content="原神Ver.7.1のヴェスナガチャ「花風にひらめく歓び」は天井まで何連でいくら？★5天井の90連、最大180連でヴェスナ確定までの原石数と課金額の目安、初回2倍の場合、残り天井からの計算方法をまとめました。">
+<link rel="canonical" href="https://genshin.navolio.net/vesna/">
+<!-- Google tag (gtag.js) GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9L6L68HM1H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9L6L68HM1H');
+</script>
+<link rel="stylesheet" href="../parts.css">
+<style>
+  /* このLPだけの調整（parts.css は直接直さない） */
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: #f2f4f7; }
+  .lp { max-width: 720px; margin: 0 auto; padding: 0 16px 40px; background: #fff; box-sizing: border-box; }
+  .lp-title { margin: 1em 0 .6em; font-size: 23px; font-weight: 900; line-height: 1.5; }
+  .lp-illust { margin: 1.2em auto .8em; text-align: center; }
+  .lp-illust img { display: inline-block; width: auto; max-width: 60%; max-height: 240px; height: auto; }
+  .lp-illust--sm img { max-width: 40%; max-height: 170px; }
+  .lp-eyecatch { margin: .6em 0 1.2em; padding: 1em; border-radius: 6px; background: linear-gradient(135deg, #fde2e4, #e2ecfb); text-align: center; }
+  .lp-eyecatch img { display: block; width: 70%; max-width: 360px; height: auto; margin: 0 auto; }
+  .lp-big { margin: 1.2em 0 !important; text-align: center; font-size: 24px; font-weight: 900; line-height: 1.5; }
+  .lp-big span { background: linear-gradient(transparent 55%, var(--mt-mark) 55%); }
+  .lp-calc { margin: 1.2em 0; padding: .9em 1em; border-radius: 6px; background: #f7f8fa; font-size: 16px; line-height: 1.9; }
+  .lp-calc p { margin: 0 0 .5em; }
+  .lp-calc p:last-child { margin: 0; }
+  /* 金額表・貸付条件表：横スクロールさせずに画面幅に収める */
+  .lp .mt-table.lp-fit { width: 100%; min-width: 0; font-size: 14px; }
+  .lp .mt-table.lp-fit td.num { text-align: right; white-space: nowrap; }
+  .lp .mt-table.lp-fit th:first-child, .lp .mt-table.lp-fit td:first-child { position: static; min-width: 0; }
+  .lp .mt-table.lp-terms { table-layout: fixed; }
+  .lp .mt-table.lp-terms col.k { width: 7.5em; }
+  .lp .mt-table.lp-terms tbody th { background: var(--mt-blue-bg); text-align: left; }
+  .lp .mt-table.lp-terms td { text-align: left; }
+  .lp-gacha { margin: 1em 0; padding: .8em 1em; border-left: 4px solid var(--mt-blue); background: var(--mt-blue-bg); }
+  .lp-gacha p { margin: 0 !important; }
+  .lp-gacha__name { font-size: 18px; font-weight: 900; }
+  /* A8バナー（広告主タグは改変しない） */
+  .lp-ad { position: relative; width: 300px; max-width: 100%; margin: 1.4em auto .4em; line-height: 0; }
+  .lp-ad img { max-width: 100%; height: auto; }
+  .lp-ad__pr { position: absolute; top: 4px; right: 4px; padding: 0 .4em; background: rgba(0,0,0,.55); color: #fff; font-size: 11px; line-height: 1.6; pointer-events: none; }
+  .lp-quote { margin: 1.2em 0; padding: .8em 1em; border-left: 4px solid var(--mt-rule); background: #fafafa; font-weight: 700; }
+  .lp-legal { margin: 1.4em 0; padding: 1em; border: 1px solid var(--mt-rule); border-radius: 6px; background: #fafafa; }
+  .lp-legal p { margin: 0 0 .8em; font-size: 13px; line-height: 1.8; }
+  .lp-legal p:last-child { margin: 0; }
+  .lp-legal__ttl { font-size: 15px !important; font-weight: 900; }
+  .mt-sitebar a { color: inherit; text-decoration: none; }
+  .site-foot { padding: 1em 16px 1.6em; background: #f5f5f5; font-family: var(--mt-font); text-align: center; }
+  .site-foot nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .3em 1.2em; margin: 0 0 .6em; font-size: 13px; }
+  .site-foot a { color: var(--mt-ink); }
+  .site-foot small { font-size: 12px; color: var(--mt-sub); }
+</style>
+</head>
+<body>
+<div class="mt-sitebar"><a href="/">ゲーム課金の値段まとめ</a></div>
+
+<main class="lp mt-body">
+
+  <h1 class="lp-title">ヴェスナガチャはいくら？天井まで何連・必要な原石を計算【原神Ver.7.1】</h1>
+
+  <div class="mt-prbar"><span><b>PR</b> 本ページにはプロモーションが含まれています</span><span>更新日：2026年10月2日</span></div>
+
+  <div class="lp-eyecatch">
+    <img src="../images/fv-kakin.webp" alt="スマホゲームの課金で出ていくお金を気にする人のイラスト" width="800" height="625">
+  </div>
+
+  <p class="mt-worry">「ヴェスナが欲しいけど、天井まで回したらいくら？」</p>
+
+  <p>現在開催中のヴェスナガチャ「花風にひらめく歓び」は、<b>2026年10月13日18:59まで</b>です。</p>
+
+  <p>先に結論をまとめます。</p>
+
+  <h2 class="mt-h2" id="kekkyoku">ヴェスナを引くために必要な金額の目安</h2>
+
+  <div class="mt-scroll">
+    <table class="mt-table lp-fit">
+      <thead>
+        <tr><th>状況</th><th>必要な原石</th><th>原石0から購入する目安</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>10連</td><td class="num">1,600個</td><td class="num">約2,810円</td></tr>
+        <tr class="is-pick"><td>★5天井・90連</td><td class="num">14,400個</td><td class="num"><b>約22,260円</b></td></tr>
+        <tr class="is-pick"><td>最大180連でヴェスナ確定</td><td class="num">28,800個</td><td class="num"><b>約43,430円</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="mt-small">※PC/Android版・初回2倍使用済み・2026年10月時点。必要数以上になるよう創世結晶を購入した場合の当サイト計算です。価格・ボーナスは変更される場合があります。</p>
+
+  <div class="mt-conclusion">
+    <p class="mt-conclusion__ttl">【結論】</p>
+    <p><span class="mt-mark">最大180連でヴェスナ確定。</span><br>180連＝28,800原石＝約43,430円が最悪ケースの目安です。</p>
+    <p>ただし、実際には手持ちの原石や現在の天井カウントによって、必要な金額はかなり少なくなることがあります。</p>
+  </div>
+
+  <nav class="mt-toc">
+    <p class="mt-toc__ttl">目次</p>
+    <ol>
+      <li><a href="#kekkyoku">ヴェスナを引くために必要な金額の目安</a></li>
+      <li><a href="#nanren">ヴェスナの天井は何連？</a></li>
+      <li><a href="#ikura">ヴェスナを天井まで引くといくら？</a></li>
+      <li><a href="#tenjo90">90連ならいくら？</a></li>
+      <li><a href="#x2">初回2倍が残っているなら金額はかなり下がる</a></li>
+      <li><a href="#calc">今何連？ヴェスナまでの必要額を計算</a></li>
+      <li><a href="#itsumade">ヴェスナガチャはいつまで？</a></li>
+      <li><a href="#kyoyu">ヴォジャニーツァと天井は共有される？</a></li>
+      <li><a href="#kakunin">ヴェスナを引く前に確認したいこと</a></li>
+      <li><a href="#kyuna">ゲームとは別に、急な出費で手元資金が必要な場合は</a></li>
+      <li><a href="#central">カードローン「セントラル」</a></li>
+      <li><a href="#hensai">返済すると総額はいくらになる？</a></li>
+      <li><a href="#mae">借りる前に確認してください</a></li>
+      <li><a href="#matome">まとめ｜ヴェスナを引くなら最大180連</a></li>
+    </ol>
+  </nav>
+
+  <!-- ==================== 天井は何連 ==================== -->
+  <h2 class="mt-h2" id="nanren">ヴェスナの天井は何連？</h2>
+
+  <p>キャラクターイベント祈願では、</p>
+
+  <p class="mt-oneline"><span>90連以内に★5キャラクターが確定</span></p>
+
+  <p>します。</p>
+
+  <p>ただし、その★5が必ずヴェスナになるとは限りません。</p>
+
+  <figure class="lp-illust">
+    <img src="../images/gacha-hazure.webp" alt="ガチャではずれた人のイラスト" width="675" height="800" loading="lazy">
+  </figure>
+
+  <p>そのため、ヴェスナを確実に入手する最大ラインとして見るのが、</p>
+
+  <p class="lp-big"><span>最大180連</span></p>
+
+  <p>です。</p>
+
+  <p>必要な原石は、</p>
+
+  <p class="lp-big"><span>180 × 160＝28,800原石</span></p>
+
+  <p>になります。</p>
+
+  <!-- ==================== 天井まで引くといくら ==================== -->
+  <h2 class="mt-h2" id="ikura">ヴェスナを天井まで引くといくら？</h2>
+
+  <p>原石をまったく持っていない状態から、28,800原石を課金だけで用意するとします。</p>
+
+  <p>現在のPC・Android版では、創世結晶6,480個＋通常ボーナス1,600個の合計8,080個が12,000円です。</p>
+
+  <figure class="lp-illust lp-illust--sm">
+    <img src="../images/genseki-kouseki.webp" alt="虹色の鉱石のイラスト" width="379" height="379" loading="lazy">
+  </figure>
+
+  <p>各パックを組み合わせて28,800個以上を用意する場合、</p>
+
+  <p class="lp-big"><span>約43,430円</span></p>
+
+  <p>がひとつの目安になります。</p>
+
+  <p>つまり、</p>
+
+  <p class="lp-quote">最大180連でヴェスナ確定まで最悪ケースで追うなら、4万円を超える可能性があります。</p>
+
+  <p>ただしこれは、</p>
+
+  <div class="mt-check">
+    <ul>
+      <li>原石0</li>
+      <li>紡がれた運命0</li>
+      <li>天井カウント0</li>
+      <li>初回2倍使用済み</li>
+      <li>最大180連まで必要</li>
+    </ul>
+  </div>
+
+  <p>という条件です。</p>
+
+  <p>実際にはもっと少なく済むケースが多いです。</p>
+
+  <!-- ==================== 90連 ==================== -->
+  <h2 class="mt-h2" id="tenjo90">90連ならいくら？</h2>
+
+  <p>まず★5キャラクターが確定する90連までなら、</p>
+
+  <p class="lp-big"><span>14,400原石</span></p>
+
+  <p>必要です。</p>
+
+  <p>原石0から通常ボーナスで必要数以上を購入すると、</p>
+
+  <h3 class="mt-h3">約22,260円</h3>
+
+  <p>が目安です。</p>
+
+  <figure class="lp-illust">
+    <img src="../images/gacha-ataranai.webp" alt="なかなか当たらないガチャのイラスト" width="603" height="800" loading="lazy">
+  </figure>
+
+  <p>すでに60連まで引いているなら、残りは30連。</p>
+
+  <p>その場合に必要なのは、</p>
+
+  <p class="mt-oneline"><span>30 × 160＝4,800原石</span></p>
+
+  <p>だけです。</p>
+
+  <!-- ==================== 初回2倍 ==================== -->
+  <h2 class="mt-h2" id="x2">初回2倍が残っているなら金額はかなり下がる</h2>
+
+  <p>創世結晶は、初回購入時に2倍になるボーナスがあります。</p>
+
+  <figure class="lp-illust lp-illust--sm">
+    <img src="../images/point-2bai.webp" alt="「ポイント2倍」のイラスト" width="446" height="425" loading="lazy">
+  </figure>
+
+  <p>PC・Android版では、</p>
+
+  <div class="mt-points">
+    <ul>
+      <li><b>6,480個 → 初回12,960個：12,000円</b></li>
+      <li><b>980個 → 初回1,960個：1,840円</b></li>
+    </ul>
+  </div>
+
+  <p>となっています。</p>
+
+  <p>この2つだけでも、</p>
+
+  <p class="lp-big"><span>14,920個</span></p>
+
+  <p>になるため、★5天井の90連に必要な14,400原石を超えます。</p>
+
+  <p>つまり初回2倍が残っていれば、</p>
+
+  <h3 class="mt-h3">13,840円で90連分を用意可能</h3>
+
+  <p>です。</p>
+
+  <p>まず自分のショップ画面で、初回2倍が残っているか確認してみてください。</p>
+
+  <!-- ==================== 計算 ==================== -->
+  <h2 class="mt-h2" id="calc">今何連？ヴェスナまでの必要額を計算</h2>
+
+  <p>自分の場合にあといくら必要なのかは、</p>
+
+  <div class="mt-check">
+    <ul>
+      <li>① 天井まであと何連か確認</li>
+      <li>② 残り回数 × 160</li>
+      <li>③ 手持ち原石を引く</li>
+    </ul>
+  </div>
+
+  <p>これだけです。</p>
+
+  <figure class="lp-illust">
+    <img src="../images/dentaku.webp" alt="電卓のイラスト" width="639" height="800" loading="lazy">
+  </figure>
+
+  <p>たとえば、</p>
+
+  <div class="mt-info mt-info--tip">
+    <ul>
+      <li><b>現在50連</b></li>
+      <li><b>手持ち原石2,000個</b></li>
+    </ul>
+  </div>
+
+  <p>なら、</p>
+
+  <div class="lp-calc">
+    <p>90－50＝40連</p>
+    <p>40 × 160＝6,400原石</p>
+    <p>6,400－2,000＝</p>
+  </div>
+
+  <h3 class="mt-h3">あと4,400原石</h3>
+
+  <p>です。</p>
+
+  <p>最初から90連・180連分を買う必要はありません。</p>
+
+  <!-- ==================== いつまで ==================== -->
+  <h2 class="mt-h2" id="itsumade">ヴェスナガチャはいつまで？</h2>
+
+  <p>開催期間は、</p>
+
+  <p class="mt-oneline"><span>Ver.7.1アップデート後～2026年10月13日18:59</span></p>
+
+  <p>です。</p>
+
+  <figure class="lp-illust">
+    <img src="../images/calendar.webp" alt="予定が書き込まれたカレンダーのイラスト" width="830" height="697" loading="lazy">
+  </figure>
+
+  <p>ピックアップ対象は限定★5キャラクター、</p>
+
+  <div class="lp-gacha">
+    <p class="lp-gacha__name">雪の宴に咲く刃・ヴェスナ（風）</p>
+    <p>「花風にひらめく歓び」</p>
+  </div>
+
+  <p>です。</p>
+
+  <p>★4では、</p>
+
+  <div class="mt-points">
+    <ul>
+      <li>ディオナ</li>
+      <li>ファルザン</li>
+      <li>重雲</li>
+    </ul>
+  </div>
+
+  <p>の出現確率がアップしています。</p>
+
+  <!-- ==================== 天井共有 ==================== -->
+  <h2 class="mt-h2" id="kyoyu">ヴォジャニーツァと天井は共有される？</h2>
+
+  <p class="lp-big"><span>共有されます。</span></p>
+
+  <p>現在同時開催中の、</p>
+
+  <div class="lp-gacha">
+    <p class="lp-gacha__name">ヴェスナ</p>
+    <p>「花風にひらめく歓び」</p>
+  </div>
+  <div class="lp-gacha">
+    <p class="lp-gacha__name">ヴォジャニーツァ</p>
+    <p>「波の叙情歌」</p>
+  </div>
+
+  <p>は、キャラクターイベント祈願同士で<b>祈願回数と天井を共有</b>します。</p>
+
+  <div class="mt-info">
+    <p class="mt-info__ttl">途中まで引いた回数は無駄にならない</p>
+    <p>たとえばヴォジャニーツァ側で70連引いたあと、ヴェスナ側へ切り替えても、天井カウントが0に戻るわけではありません。</p>
+    <p>なので「どちらを引くか」で迷っている場合でも、途中まで引いた回数が無駄になるわけではありません。</p>
+  </div>
+
+  <!-- ==================== 引く前に確認 ==================== -->
+  <h2 class="mt-h2" id="kakunin">ヴェスナを引く前に確認したいこと</h2>
+
+  <p>課金額を決める前に、</p>
+
+  <div class="mt-summary">
+    <p class="mt-summary__ttl">課金前に確認したい4つ</p>
+    <ul>
+      <li>現在の祈願回数</li>
+      <li>手持ち原石</li>
+      <li>紡がれた運命</li>
+      <li>初回チャージ2倍</li>
+    </ul>
+  </div>
+
+  <p>の4つを確認しておくのがおすすめです。</p>
+
+  <figure class="lp-illust">
+    <img src="../images/kakeibo.webp" alt="家計簿をつける人のイラスト" width="738" height="800" loading="lazy">
+  </figure>
+
+  <div class="mt-caution">
+    <p class="mt-caution__ttl">生活費への影響に注意</p>
+    <p>欲しいキャラが来ると追加で回したくなりますが、最大天井まで追えば数万円になることもあります。</p>
+    <p><b>生活費や毎月の支払いに影響しない範囲で楽しみましょう。</b></p>
+  </div>
+
+  <!-- ==================== 急な出費 ==================== -->
+  <h2 class="mt-h2" id="kyuna">ゲームとは別に、急な出費で手元資金が必要な場合は</h2>
+
+  <p>ここからは、ヴェスナガチャへの課金とは別の話です。</p>
+
+  <p>急な出費が重なり、<b>一時的に手元資金そのものが不足すること</b>があります。</p>
+
+  <figure class="lp-illust">
+    <img src="../images/saifu-okane-nai.webp" alt="財布にお金がなくて困っている人のイラスト" width="581" height="749" loading="lazy">
+  </figure>
+
+  <div class="mt-bridge">
+    <p class="mt-bridge__s">そうした場合の資金調達方法のひとつに、</p>
+    <p class="mt-bridge__name">＼<span>カードローン</span>／</p>
+  </div>
+
+  <p>があります。</p>
+
+  <p>カードローンには<b>審査があり、借入額に応じて利息が発生します。</b></p>
+
+  <p>利用する場合は、</p>
+
+  <p class="mt-oneline"><span>借りられる金額ではなく、無理なく返せる金額</span></p>
+
+  <p>を基準に考えることが大切です。</p>
+
+  <!-- ==================== セントラル ==================== -->
+  <h2 class="mt-h2" id="central">カードローン「セントラル」</h2>
+
+  <p>セントラルは、20歳以上で定期的な収入と返済能力を有し、同社の基準を満たす方を対象とするカードローンです。</p>
+
+  <h4 class="mt-h4">セントラルの<em>主な貸付条件</em></h4>
+
+  <div class="mt-scroll">
+    <table class="mt-table lp-fit lp-terms">
+      <colgroup><col class="k"><col></colgroup>
+      <thead>
+        <tr><th>項目</th><th>内容</th></tr>
+      </thead>
+      <tbody>
+        <tr><th>貸付利率</th><td>実質年率4.80％～18.00％</td></tr>
+        <tr><th>契約限度額</th><td>1万円～300万円</td></tr>
+        <tr><th>対象</th><td>20歳以上で定期的な収入と返済能力を有し、同社基準を満たす方</td></tr>
+        <tr><th>担保・連帯保証人</th><td>不要</td></tr>
+        <tr><th>遅延損害金</th><td>年20.00％</td></tr>
+        <tr><th>返済方式</th><td>借入残高スライドリボルビング方式</td></tr>
+        <tr><th>1万円～30万円の返済期間</th><td>最終借入日から最長3年・1～32回</td></tr>
+        <tr><th>30万円超～300万円の返済期間</th><td>最終借入日から最長4年・1～47回</td></tr>
+        <tr><th>審査</th><td>あり</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="mt-h3">初めて利用する場合</h3>
+
+  <p>条件を満たす場合、</p>
+
+  <p class="mt-oneline"><span>契約日の翌日から最大30日間金利0円</span></p>
+
+  <p>となります。</p>
+
+  <p class="mt-small">※「借入日の翌日」ではなく「契約日の翌日」からです。</p>
+
+  <h3 class="mt-h3">セントラルの金利・利用条件を確認する</h3>
+
+  <div class="lp-ad">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B1V20+C968T6+363I+66OZ5" rel="nofollow">
+    <img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=260427384741&wid=002&eno=01&mid=s00000014787001039000&mc=1"></a>
+    <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4B1V20+C968T6+363I+66OZ5" alt="">
+    <span class="lp-ad__pr">PR</span>
+  </div>
+
+  <div class="mt-cta">
+    <a class="mt-cta__btn" href="https://px.a8.net/svt/ejp?a8mat=4B1V20+C968T6+363I+66OZ5" rel="nofollow sponsored">公式サイトで金利・利用条件を確認する</a>
+    <p class="mt-cta__note">※申込み前に貸付条件と返済計画をご確認ください。</p>
+  </div>
+
+  <!-- ==================== 返済総額 ==================== -->
+  <h2 class="mt-h2" id="hensai">返済すると総額はいくらになる？</h2>
+
+  <p>カードローンは、借りた金額だけを返せば終わりではなく、利息が発生します。</p>
+
+  <figure class="lp-illust lp-illust--sm">
+    <img src="../images/keiyakusho.webp" alt="契約書のイラスト" width="711" height="733" loading="lazy">
+  </figure>
+
+  <p>セントラル公式サイトでは、代表例として、</p>
+
+  <p class="lp-quote">実質年率18.00％で30万円を借り、30日ごとに3万円ずつ返済する場合</p>
+
+  <p>が掲載されています。</p>
+
+  <p>この例では、</p>
+
+  <div class="lp-calc">
+    <p><b>返済回数：11回</b></p>
+    <p><b>返済総額：327,065円</b></p>
+  </div>
+
+  <p>となり、</p>
+
+  <p class="mt-oneline"><span>30万円の元金に対して、利息を含めた総支払額は327,065円</span></p>
+
+  <p>です。</p>
+
+  <p>借入条件や返済ペースによって実際の金額は変わるため、申込み前に返済総額を確認してください。</p>
+
+  <!-- ==================== 借りる前に ==================== -->
+  <h2 class="mt-h2" id="mae">借りる前に確認してください</h2>
+
+  <figure class="lp-illust">
+    <img src="../images/yubisashi-kakunin.webp" alt="指差し確認をする人のイラスト" width="743" height="838" loading="lazy">
+  </figure>
+
+  <div class="mt-caution">
+    <p>カードローンは、<b>「使えるお金が増えるサービス」ではなく、返済が必要な借入れ</b>です。</p>
+    <p>借りた金額に応じて利息が発生します。</p>
+    <p>利用する場合は、生活費や今後の支払いを含めても無理なく返済できるか確認しましょう。</p>
+  </div>
+
+  <!-- ==================== まとめ ==================== -->
+  <h2 class="mt-h2" id="matome">まとめ｜ヴェスナを引くなら最大180連</h2>
+
+  <p>ヴェスナガチャのポイントをまとめます。</p>
+
+  <div class="mt-summary">
+    <p class="mt-summary__ttl">ヴェスナガチャのポイント</p>
+    <ul>
+      <li><b>開催終了：2026年10月13日18:59</b></li>
+      <li><b>★5天井：最大90連</b></li>
+      <li><b>最大180連でヴェスナ確定</b></li>
+      <li><b>90連：14,400原石</b></li>
+      <li><b>180連：28,800原石</b></li>
+    </ul>
+  </div>
+
+  <p>原石0・通常ボーナスの場合、</p>
+
+  <div class="mt-summary">
+    <p class="mt-summary__ttl">課金額の目安（PC/Android版・初回2倍使用済み・2026年10月時点）</p>
+    <ul>
+      <li><b>90連：約22,260円</b></li>
+      <li><b>180連：約43,430円</b></li>
+    </ul>
+  </div>
+
+  <p>が目安です。</p>
+
+  <p>ただし、現在の祈願回数・手持ち原石・初回2倍によって、実際の必要額は大きく変わります。</p>
+
+  <p>まずは自分の現在の天井までの残り回数を確認してから計算してみてください。</p>
+
+  <!-- ==================== 広告・貸付条件 ==================== -->
+  <div class="lp-legal">
+    <p class="lp-legal__ttl">広告・貸付条件について</p>
+    <p>本ページにはアフィリエイト広告が含まれています。</p>
+    <p>株式会社セントラル<br>〒790-0013<br>愛媛県松山市河原町9-2 クロカワビル2F</p>
+    <p>登録番号：四国財務局長（10）第00083号<br>日本貸金業協会会員 第001473号</p>
+    <p>貸付利率：実質年率4.80％～18.00％<br>遅延損害金：年20.00％<br>契約限度額：1万円～300万円<br>返済期間：最短1回～最長47回／最長4年<br>※契約額により返済回数・期間が異なります。<br>返済方式：借入残高スライドリボルビング方式<br>担保・連帯保証人：不要<br>利用には審査があります。</p>
+    <p>代表返済例：実質年率18.00％で30万円を借り、30日ごとに3万円ずつ返済した場合、11回払い・返済総額327,065円。</p>
+    <p>貸付条件や返済例などの最新情報は、セントラル公式サイトをご確認ください。</p>
+  </div>
+
+</main>
+
+<footer class="site-foot">
+  <nav><a href="/operator/">運営者情報</a><a href="/privacy/">プライバシーポリシー</a><a href="/disclosure/">広告掲載について</a></nav>
+  <small>イラスト：いらすとや</small><br><small>© ゲーム課金の値段まとめ</small>
+</footer>
+
+<script>
+  /* A8リンク（バナー・ボタン）のクリックをGA4へ送る */
+  document.querySelectorAll('a[href^="https://px.a8.net/"]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (typeof gtag !== 'function') return;
+      gtag('event', 'affiliate_click', { link_label: a.querySelector('img') ? 'central_banner' : 'central_button', link_url: a.href, program: 'central', transport_type: 'beacon' });
+    });
+  });
+</script>
+</body>
+</html>
